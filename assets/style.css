@@ -6,7 +6,7 @@
 }
 
 body{
-    background:url(img/bg-desktop.webp);
+    background:url(img/criativo-66007825c914cimg-2024-03-2466007825c9152.jpg);
     font-family: Bai Jamjuree;
     }
     #container{
@@ -60,6 +60,22 @@ body{
     .cartao__conteudo__resposta{
         color: var(--text-color);
         font-weight: 700;
+    }
+
+    .cartao:hover .cartao__conteudo{
+        transform: rotateY(180deg);
+    }
+
+    .cartao__conteudo__pergunta,
+    .cartao__conteudo__resposta{
+        backface-visibility: hidden;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+    .cartao__conteudo__resposta{
+        transform: rotateY(180deg);
     }
     
     
